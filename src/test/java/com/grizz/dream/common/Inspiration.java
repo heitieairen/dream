@@ -12,14 +12,14 @@ import java.util.List;
 public class Inspiration {
 
     /**
-     * @author @GCITFEOD008
-     * @description 冒泡排序 
-     * @date 2020/8/16 1:48 
-     * @param 
+     * @param
      * @return void
+     * @author @GCITFEOD008
+     * @description 冒泡排序
+     * @date 2020/8/16 1:48
      **/
     @Test
-    void bubbleSort(){
+    void bubbleSort() {
         List<Integer> list = new ArrayList<>();
         list.add(5);
         list.add(3);
@@ -31,11 +31,11 @@ public class Inspiration {
         list.add(6);
         list.add(8);
         System.out.println("排序前的当前顺序为" + list);
-        for(int i = 0; i < list.size(); i++){
-            for(int z = i+1; z<list.size(); z++){
+        for (int i = 0; i < list.size(); i++) {
+            for (int z = i + 1; z < list.size(); z++) {
                 Integer obj1 = list.get(i);
                 Integer obj2 = list.get(z);
-                if(obj1 > obj2){
+                if (obj1 > obj2) {
                     list.set(i, obj2);
                     list.set(z, obj1);
                 }
